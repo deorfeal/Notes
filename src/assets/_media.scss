@@ -1,0 +1,40 @@
+@media (max-width: 900px) {
+    .menu__inner {
+        position: absolute;
+        width: 300px;
+        transform: translateX(-400%);
+        background: #20262a;
+        top: 0;
+        transition: transform 0.3s;
+    }
+    .menu {
+        width: 50px;
+        min-width: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 13px;
+        position: relative;
+    }
+
+    .menu__btn {
+        display: flex;
+    }
+
+    .menu__inner--active {
+        transform: translateX(39px);
+        z-index: 100;
+    }
+}
+
+@media ( max-width: 650px ) {
+    .main-search {
+        min-width: 200px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    html, body {
+        height: 150%;
+    }
+}
